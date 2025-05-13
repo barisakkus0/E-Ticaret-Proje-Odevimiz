@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\models\\oneriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\models\\oneriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Oneriler.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\Oneriler.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Models\\Oneriler.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\Oneriler.cs",
+              "RelativeToolTip": "Eticaretproject\\Models\\Oneriler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T23:17:52.762Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

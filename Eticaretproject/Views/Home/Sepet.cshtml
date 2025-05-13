@@ -1,0 +1,602 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f7;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Header */
+        .header {
+            background-color: #3f26ad;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+            .logo span {
+                color: #3f26ad;
+            }
+
+        /* Progress bar */
+        .progress-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+        }
+
+        .step-number {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #3f26ad;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .step-text {
+            font-weight: bold;
+        }
+
+        .step-divider {
+            width: 100px;
+            height: 2px;
+            background-color: #ddd;
+            margin: 0 20px;
+        }
+
+        .step.inactive .step-number {
+            background-color: #ccc;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Alert */
+        .alert {
+            background-color: #ffeeee;
+            border-left: 4px solid #3f26ad;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* Cart section */
+        .cart-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .cart-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        /* Cart items */
+        .cart-items {
+            padding: 0;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+
+        .cart-item-image {
+            width: 80px;
+            height: 100px;
+            object-fit: contain;
+            margin-right: 20px;
+            border: 1px solid #eee;
+            padding: 5px;
+        }
+
+        .cart-item-details {
+            flex: 1;
+        }
+
+        .cart-item-category {
+            color: #777;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .cart-item-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .cart-item-variant {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .cart-item-price {
+            font-weight: 600;
+            font-size: 18px;
+            color: #333;
+            margin-left: 20px;
+            white-space: nowrap;
+        }
+
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .quantity-btn {
+            background: none;
+            border: none;
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+            .quantity-btn:hover {
+                background-color: #f5f5f5;
+            }
+
+        .quantity-input {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border: none;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        .delete-btn {
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            margin-left: 15px;
+            font-size: 18px;
+        }
+
+            .delete-btn:hover {
+                color: #3f26ad;
+            }
+
+        .cart-item-delivery {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .cart-item-delivery-icon {
+            margin-right: 5px;
+        }
+
+        /* Cart actions */
+        .cart-actions {
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #333;
+        }
+
+            .btn-outline:hover {
+                color: #3f26ad;
+            }
+
+        .btn-icon {
+            margin-right: 5px;
+        }
+
+        /* Order summary */
+        .order-summary {
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            align-self: flex-start;
+        }
+
+        .summary-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .summary-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .summary-content {
+            padding: 15px 20px;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+            .summary-row.total {
+                font-size: 18px;
+                font-weight: 600;
+                padding-top: 15px;
+                border-top: 1px solid #eee;
+                margin-top: 15px;
+            }
+
+        .checkout-btn {
+            background-color: #3f26ad;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+
+            .checkout-btn:hover {
+                background-color: #3f26ad;
+            }
+
+        .discount-row {
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .discount-text {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .discount-icon {
+            margin-right: 5px;
+        }
+
+        /* Responsive */
+        @@media (max-width: 768px) {
+            .container
+
+        {
+            flex-direction: column;
+        }
+
+        .order-summary {
+            width: 100%;
+        }
+
+        .cart-item {
+            flex-wrap: wrap;
+        }
+
+        .cart-item-price {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        .cart-item-actions {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        .step-divider {
+            width: 50px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo"><span>OOPG19</span></div>
+        <div></div> <!-- Placeholder for other header elements -->
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-text">Sepet</div>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step inactive">
+            <div class="step-number">2</div>
+            <div class="step-text">Teslimat ve Ödeme</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <!-- Cart Section -->
+            <section class="cart-section">
+                <div class="cart-header">
+                    <h1 class="cart-title">Sepet</h1>
+                </div>
+
+                <div class="cart-items">
+                    <!-- Item 1 -->
+                    <div class="cart-item" data-id="1">
+                        <img src="https://via.placeholder.com/80x100" alt="Samsung Galaxy A55" class="cart-item-image">
+                        <div class="cart-item-details">
+                            <div class="cart-item-category">Satıcı: Akıllı Teknoloji</div>
+                            <h3 class="cart-item-name">Samsung Galaxy A55 5G 8 GB RAM 128 GB</h3>
+                            <p class="cart-item-variant">Siyah Cep Telefonu (Samsung Türkiye Garantili)</p>
+                            <div class="cart-item-delivery">
+                                <span class="cart-item-delivery-icon">🚚</span> Adrese Teslimat
+                            </div>
+                        </div>
+                        <div class="cart-item-price">17.449 TL</div>
+                        <div class="cart-item-actions">
+                            <div class="quantity-control">
+                                <button class="quantity-btn decrease">-</button>
+                                <input type="number" min="1" value="1" class="quantity-input">
+                                <button class="quantity-btn increase">+</button>
+                            </div>
+                            <button class="delete-btn" title="Sil">🗑️</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Actions -->
+                <div class="cart-actions">
+                    <button class="btn btn-outline">
+                        <span class="btn-icon">←</span> Alışverişe Devam Et
+                    </button>
+                    <button class="btn btn-outline">
+                        <span class="btn-icon">🗑️</span> Sepeti Boşalt
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <div class="summary-header">
+                <h2 class="summary-title">Sipariş Özeti</h2>
+            </div>
+            <div class="summary-content">
+                <div class="summary-row">
+                    <span>1 Ürün</span>
+                    <span></span>
+                </div>
+                <div class="summary-row">
+                    <span>Sipariş Tutarı (KDV Dahil)</span>
+                    <span>17.449 TL</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Toplam</span>
+                    <span>17.449 TL</span>
+                </div>
+
+                <form action="/Home/Odeme" method="get">
+                    <button type="submit" class="checkout-btn">Alışverişi Tamamla</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+   
+
+    <script>
+        // Get all elements
+        const cartItems = document.querySelector('.cart-items');
+        const subtotalElement = document.querySelector('.summary-row:nth-child(2) span:last-child');
+        const totalElement = document.querySelector('.summary-row.total span:last-child');
+
+        // Initialize cart
+        let items = [
+            { id: 1, name: 'Samsung Galaxy A55 5G 8 GB RAM 128 GB', price: 17449, quantity: 1 }
+        ];
+
+        // Add event listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            // Quantity buttons
+            document.querySelectorAll('.quantity-btn').forEach(btn => {
+                btn.addEventListener('click', handleQuantityChange);
+            });
+
+            // Delete buttons
+            document.querySelectorAll('.delete-btn').forEach(btn => {
+                btn.addEventListener('click', handleDeleteItem);
+            });
+
+            // Empty cart button
+            document.querySelector('.cart-actions .btn-outline:last-child').addEventListener('click', emptyCart);
+
+            // Continue shopping button
+            document.querySelector('.cart-actions .btn-outline:first-child').addEventListener('click', () => {
+            });
+
+            // Checkout button
+            document.querySelector('.checkout-btn').addEventListener('click', () => {
+            });
+            // Update cart summary
+            updateCartSummary();
+        });
+
+        // Handle quantity change
+        function handleQuantityChange(e) {
+            const btn = e.target;
+            const item = btn.closest('.cart-item');
+            const itemId = parseInt(item.dataset.id);
+            const input = item.querySelector('.quantity-input');
+            let quantity = parseInt(input.value);
+
+            if (btn.classList.contains('increase')) {
+                quantity++;
+            } else if (btn.classList.contains('decrease') && quantity > 1) {
+                quantity--;
+            }
+
+            input.value = quantity;
+
+            // Update item quantity in items array
+            const itemIndex = items.findIndex(i => i.id === itemId);
+            if (itemIndex !== -1) {
+                items[itemIndex].quantity = quantity;
+                updateCartSummary();
+
+                // Update price display
+                const priceElement = item.querySelector('.cart-item-price');
+                const price = items[itemIndex].price * quantity;
+                priceElement.textContent = formatPrice(price);
+            }
+        }
+
+        // Handle delete item
+        function handleDeleteItem(e) {
+            const item = e.target.closest('.cart-item');
+            const itemId = parseInt(item.dataset.id);
+
+            if (confirm('Bu ürünü sepetten çıkarmak istediğinize emin misiniz?')) {
+                // Remove item from DOM
+                item.remove();
+
+                // Remove item from items array
+                items = items.filter(i => i.id !== itemId);
+
+                // Update cart summary
+                updateCartSummary();
+
+                // Show empty cart if no items left
+                if (items.length === 0) {
+                    emptyCart();
+                }
+            }
+        }
+
+        // Empty cart
+        function emptyCart() {
+            if (confirm('Sepetinizi boşaltmak istediğinize emin misiniz?')) {
+                cartItems.innerHTML = '<div class="cart-item" style="justify-content: center; padding: 40px;">Sepetinizde ürün bulunmamaktadır.</div>';
+                items = [];
+                updateCartSummary();
+            }
+        }
+
+        // Update cart summary
+        function updateCartSummary() {
+            // Calculate subtotal
+            const subtotal = items.reduce((total, item) => total + (item.price * item.quantity), 0);
+            subtotalElement.textContent = formatPrice(subtotal);
+
+            // Calculate total
+            totalElement.textContent = formatPrice(subtotal);
+        }
+
+        // Format price
+        function formatPrice(price) {
+            return price.toLocaleString('tr-TR') + ' TL';
+        }
+    </script>
+</body>
+</html>

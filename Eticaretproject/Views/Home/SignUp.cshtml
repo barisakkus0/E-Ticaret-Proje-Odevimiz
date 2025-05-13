@@ -1,0 +1,113 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/SignUpScript/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/SignUpScript/css/style.css">
+    	<style>
+		.gri-buton {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #e0e0e0;
+			color: #111;
+			font-size: 15px;
+			font-weight: 600;
+			text-decoration: none;
+			border-radius: 10px;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+			transition: background-color 0.3s ease, transform 0.2s ease;
+		}
+
+			.gri-buton:hover {
+				background-color: #cccccc;
+				transform: translateY(-2px);
+			}
+	</style>
+    <style>
+        .form-submit {
+            background-color: #4CAF50; /* Yeşil arka plan */
+            color: white; /* Beyaz metin */
+            padding: 15px 32px; /* İç boşluk */
+            font-size: 16px; /* Yazı boyutu */
+            border: none; /* Kenarlık yok */
+            border-radius: 25px; /* Yuvarlak köşeler */
+            cursor: pointer; /* İmleç butona geldiğinde el simgesi */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Geçiş efektleri */
+        }
+
+            .form-submit:hover {
+                background-color: #45a049; /* Hover durumunda daha koyu yeşil */
+                transform: translateY(-2px); /* Hover durumunda butonu yukarı kaldır */
+            }
+
+            .form-submit:active {
+                background-color: #3e8e41; /* Tıklandığında biraz daha koyu yeşil */
+                transform: translateY(0); /* Tıklandığında buton normal pozisyona döner */
+            }
+    </style>
+</head>
+<body>
+    <div style="position: absolute; top: 20px; left: 20px;">
+        <a href="@Url.Action("Index", "Home")" class="gri-buton">
+            🏠 Anasayfa
+        </a>
+    </div>
+    <div class="main">
+
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form">
+                        <h2 class="form-title">Hesap Oluştur</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="name" id="name" placeholder="İsim" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Kullanıcı E-Posta" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="password" id="password" placeholder="Şifre" />
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Şifre Tekrar" />
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>Tüm Şartları Kabul Ediyorum  <a href="~/SignUpScript/" class="term-service"></a></label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="submit" id="submit" class="form-submit">
+                                KAYDOL
+                            </button>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Hesabın Var mı? <a href="/Home/Login" class="loginhere-link">Giriş Yap</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="~/SignUpScriptvendor/jquery/jquery.min.js"></script>
+    <script src="~/SignUpScriptjs/main.js"></script>
+</body>
+</html>

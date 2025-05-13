@@ -1,0 +1,1578 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Admin Panel</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --secondary: #f3f4f6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --danger: #ef4444;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9fafb;
+            color: var(--text);
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: white;
+            border-right: 1px solid var(--border);
+            padding: 1.5rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .nav-item {
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+            .nav-item:hover {
+                background-color: var(--secondary);
+            }
+
+            .nav-item.active {
+                background-color: var(--primary);
+                color: white;
+            }
+
+            .nav-item i {
+                font-size: 1.25rem;
+            }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+            .header h1 {
+                font-size: 1.875rem;
+                font-weight: 700;
+            }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        /* Dashboard */
+        .dashboard-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+            .stat-card h3 {
+                font-size: 0.875rem;
+                color: var(--text-light);
+                margin-bottom: 0.5rem;
+            }
+
+            .stat-card .value {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .stat-card .trend {
+                display: flex;
+                align-items: center;
+                gap: 0.25rem;
+                margin-top: 0.5rem;
+                font-size: 0.875rem;
+            }
+
+        .trend.up {
+            color: var(--success);
+        }
+
+        .trend.down {
+            color: var(--danger);
+        }
+
+        /* Charts */
+        .charts-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+            .chart-card h3 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+        .chart {
+            height: 300px;
+            position: relative;
+        }
+
+        /* Products Table */
+        .section {
+            display: none;
+        }
+
+            .section.active {
+                display: block;
+            }
+
+        .table-container {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+            .table-header h2 {
+                font-size: 1.25rem;
+            }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: var(--secondary);
+            border-radius: 0.375rem;
+            padding: 0.5rem 1rem;
+        }
+
+            .search-container input {
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 0.875rem;
+                width: 200px;
+            }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--secondary);
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        tr {
+            border-bottom: 1px solid var(--border);
+        }
+
+            tr:last-child {
+                border-bottom: none;
+            }
+
+        .product-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 0.25rem;
+            object-fit: cover;
+        }
+
+        .status {
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+            .status.in-stock {
+                background-color: rgba(16, 185, 129, 0.1);
+                color: var(--success);
+            }
+
+            .status.low-stock {
+                background-color: rgba(245, 158, 11, 0.1);
+                color: var(--warning);
+            }
+
+            .status.out-of-stock {
+                background-color: rgba(239, 68, 68, 0.1);
+                color: var(--danger);
+            }
+
+        .actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+            .btn-primary:hover {
+                background-color: var(--primary-hover);
+            }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--border);
+        }
+
+            .btn-outline:hover {
+                background-color: var(--secondary);
+            }
+
+        .btn-danger {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .btn-icon {
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid var(--border);
+            background-color: transparent;
+        }
+
+            .btn-icon:hover {
+                background-color: var(--secondary);
+            }
+
+        /* Forms */
+        .form-container {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+            }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: 0.375rem;
+            border: 1px solid var(--border);
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+            .form-control:focus {
+                outline: none;
+                border-color: var(--primary);
+                box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+            }
+
+        textarea.form-control {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Modal */
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            display: none;
+        }
+
+        .modal {
+            background-color: white;
+            border-radius: 0.5rem;
+            width: 500px;
+            max-width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .modal-header h2 {
+                font-size: 1.25rem;
+            }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .modal-footer {
+            padding: 1.5rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+        }
+
+        /* Responsive */
+        @@media (max-width: 768px) {
+            .container
+
+        {
+            flex-direction: column;
+        }
+
+        .sidebar {
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid var(--border);
+            padding: 1rem;
+        }
+
+        .logo {
+            margin-bottom: 1rem;
+        }
+
+        .charts-container {
+            grid-template-columns: 1fr;
+        }
+
+        .main-content {
+            padding: 1rem;
+        }
+
+        }
+
+        .user-profile-btn {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-family: inherit;
+        }
+
+            .user-profile-btn:hover {
+                background-color: #e0e0e0;
+                transform: translateY(-1px);
+            }
+
+        .user-name {
+            margin-right: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">OOPG19</div>
+            <div class="nav-item active" data-section="dashboard">
+                <i>📊</i>
+                <span>İstatistikler</span>
+            </div>
+            <div class="nav-item" data-section="products">
+                <i>📦</i>
+                <span>Ürünler</span>
+            </div>
+            <div class="nav-item" data-section="add-product">
+                <i>➕</i>
+                <span>
+                    Ürün Ekle
+                </span>
+            </div>
+            <div class="nav-item" data-section="orders">
+                <i>🛒</i>
+                <span>Siparişler</span>
+            </div>
+            <div class="nav-item" data-section="customers">
+                <i>👥</i>
+                <span>Müşteriler</span>
+            </div>
+            <div class="nav-item" data-section="settings">
+                <i>⚙️</i>
+                <span>Ayarlar</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>İstatistikler</h1>
+                <button class="user-profile-btn" type="button">
+                    <span class="user-name">Admin</span>
+                    <span class="user-avatar">A</span>
+                </button>
+
+            </div>
+
+            <!-- Dashboard Section -->
+            <div class="section active" id="dashboard">
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <h3>
+                            Toplam Satışlar
+                        </h3>
+                        <div class="value">$24,780</div>
+                        <div class="trend up">
+                            <i>↑</i>
+                            <span>
+                                Geçen aya göre %12
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Siparişler</h3>
+                        <div class="value">356</div>
+                        <div class="trend up">
+                            <i>↑</i>
+                            <span>
+                                Geçen aydan %8
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>
+                            Müşteriler
+                        </h3>
+                        <div class="value">1,245</div>
+                        <div class="trend up">
+                            <i>↑</i>
+                            <span>
+                                Geçen aya göre %5
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Dönüşüm Oranı</h3>
+                        <div class="value">3.2%</div>
+                        <div class="trend down">
+                            <i>↓</i>
+                            <span>
+                                Geçen aya göre %1
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <h3>
+                            Satışlara Genel Bakış
+                        </h3>
+                        <div class="chart" id="sales-chart"></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>
+                            En Popüler Ürünler
+                        </h3>
+                        <div class="chart" id="products-chart"></div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header">
+                        <h2>
+                            Son Siparişler
+                        </h2>
+                        <div class="search-container">
+                            <i>🔍</i>
+                            <input type="text" placeholder="Sipariş Ara...">
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Sipariş ID
+                                </th>
+                                <th>
+                                    Müşteri
+                                </th>
+                                <th>Tarih</th>
+                                <th>Miktar</th>
+                                <th>Durum</th>
+                                <th>
+                                    İşlemler
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-001</td>
+                                <td>John Doe</td>
+                                <td>May 8, 2025</td>
+                                <td>$120.00</td>
+                                <td>
+                                    <span class="status in-stock">
+                                        Tamamlandı
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-002</td>
+                                <td>Jane Smith</td>
+                                <td>May 7, 2025</td>
+                                <td>$85.50</td>
+                                <td>
+                                    <span class="status in-stock">
+                                        Tamamlandı
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-003</td>
+                                <td>Robert Johnson</td>
+                                <td>May 7, 2025</td>
+                                <td>$220.00</td>
+                                <td>
+                                    <span class="status low-stock">
+                                        Hazırlanıyor
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-004</td>
+                                <td>Emily Davis</td>
+                                <td>May 6, 2025</td>
+                                <td>$65.25</td>
+                                <td>
+                                    <span class="status out-of-stock">
+                                        İptal edildi
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-005</td>
+                                <td>Michael Wilson</td>
+                                <td>May 6, 2025</td>
+                                <td>$175.00</td>
+                                <td>
+                                    <span class="status in-stock">
+                                        Tamamlandı
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <!-- Ürünler Bölümü -->
+            <div class="section" id="products">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h2>Ürünler</h2>
+                        <div class="search-container">
+                            <i>🔍</i>
+                            <input type="text" id="product-search" placeholder="Ürün Ara...">
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Resim</th>
+                                <th>İsim</th>
+                                <th>Kategori</th>
+                                <th>
+                                    Fiyat
+                                </th>
+                                <th>Stok</th>
+                                <th>Durum</th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody id="products-table-body">
+
+                            <!-- Ürünler buraya JavaScript aracılığıyla yüklenecek -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <!-- Ürün Bölümü Ekle -->
+            <div class="section" id="add-product">
+                <div class="form-container">
+                    <h2 class="mb-4">
+                        Yeni Ürün Ekle
+                    </h2>
+                    <form id="add-product-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="product-name">Ürün İsmi</label>
+                                <input type="text" id="product-name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-category">Kategori</label>
+                                <select id="product-category" class="form-control" required>
+                                    <option value="">
+                                        Kategori Seçin
+                                    </option>
+                                    <option value="Electronics">TELEFON</option>
+                                    <option value="Electronics">BİLGİSAYAR</option>
+                                    <option value="Electronics">TELEVİZYON</option>
+                                    <option value="Electronics">FOTOĞRAF VE KAMERA SİSTEMLERİ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="product-price">
+                                    Fiyat
+                                </label>
+                                <input type="number" id="product-price" class="form-control" min="0" step="0.01" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-stock">
+                                    Stok Miktarı
+                                </label>
+                                <input type="number" id="product-stock" class="form-control" min="0" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-description">
+                                Açıklama
+                            </label>
+                            <textarea id="product-description" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image">Resim URL</label>
+                            <input type="text" id="product-image" class="form-control" placeholder="https://example.com/image.jpg" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Ürün Ekle
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Siparişler Bölümü -->
+            <div class="section" id="orders">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h2>
+                            Siparişler
+                        </h2>
+                        <div class="search-container">
+                            <i>🔍</i>
+                            <input type="text" placeholder="Sipariş Ara...">
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Sipariş ID
+                                </th>
+                                <th>Müşteri</th>
+                                <th>Tarih</th>
+                                <th>Miktar</th>
+                                <th>Durum</th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-001</td>
+                                <td>John Doe</td>
+                                <td>May 8, 2025</td>
+                                <td>$120.00</td>
+                                <td><span class="status in-stock">Tamamlandı</span></td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-002</td>
+                                <td>Jane Smith</td>
+                                <td>May 7, 2025</td>
+                                <td>$85.50</td>
+                                <td><span class="status in-stock">Tamamlandı</span></td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-003</td>
+                                <td>Robert Johnson</td>
+                                <td>May 7, 2025</td>
+                                <td>$220.00</td>
+                                <td><span class="status low-stock">Hazırlanıyor</span></td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-004</td>
+                                <td>Emily Davis</td>
+                                <td>May 6, 2025</td>
+                                <td>$65.25</td>
+                                <td><span class="status out-of-stock">İptal Edildi</span></td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-005</td>
+                                <td>Michael Wilson</td>
+                                <td>May 6, 2025</td>
+                                <td>$175.00</td>
+                                <td><span class="status in-stock">Tamamlandı</span></td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-006</td>
+                                <td>Sarah Brown</td>
+                                <td>May 5, 2025</td>
+                                <td>$95.75</td>
+                                <td><span class="status low-stock">Hazırlanıyor</span></td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-007</td>
+                                <td>David Miller</td>
+                                <td>May 5, 2025</td>
+                                <td>$150.00</td>
+                                <td><span class="status in-stock">Tamamlandı</span></td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-008</td>
+                                <td>Jennifer Taylor</td>
+                                <td>May 4, 2025</td>
+                                <td>$210.50</td>
+                                <td><span class="status in-stock">Tamamlandı</span></td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Customers Section -->
+            <div class="section" id="customers">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h2>Customers</h2>
+                        <div class="search-container">
+                            <i>🔍</i>
+                            <input type="text" placeholder="Müşteri Ara...">
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>İsim</th>
+                                <th>E-Mail</th>
+                                <th>
+                                    Siparişler
+                                </th>
+                                <th>
+                                    Toplam Harcama
+                                </th>
+                                <th>
+                                    Katıldı
+                                </th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>john.doe@example.com</td>
+                                <td>5</td>
+                                <td>$520.00</td>
+                                <td>Jan 15, 2025</td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>jane.smith@example.com</td>
+                                <td>3</td>
+                                <td>$320.50</td>
+                                <td>Feb 20, 2025</td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Robert Johnson</td>
+                                <td>robert.johnson@example.com</td>
+                                <td>2</td>
+                                <td>$250.00</td>
+                                <td>Mar 5, 2025</td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Emily Davis</td>
+                                <td>emily.davis@example.com</td>
+                                <td>1</td>
+                                <td>$65.25</td>
+                                <td>Apr 10, 2025</td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Michael Wilson</td>
+                                <td>michael.wilson@example.com</td>
+                                <td>4</td>
+                                <td>$475.00</td>
+                                <td>Jan 25, 2025</td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="btn-icon">👁️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Ayarlar Bölümü -->
+            <div class="section" id="settings">
+                <div class="form-container">
+                    <h2 class="mb-4">
+                        Mağaza Ayarları
+                    </h2>
+                    <form id="settings-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="store-name">
+                                    Mağaza Adı
+                                </label>
+                                <input type="text" id="store-name" class="form-control" value="OOPG19" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="store-email">Mağaza E -mail</label>
+                                <input type="email" id="store-email" class="form-control" value="contact@eshop.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="store-currency">
+                                    Para birimi
+                                </label>
+                                <select id="store-currency" class="form-control" required>
+                                    <option value="USD" selected>USD ($)</option>
+                                    <option value="EUR">EUR (€)</option>
+                                    <option value="GBP">GBP (£)</option>
+                                    <option value="JPY">JPY (¥)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tax-rate">
+                                    Vergi Oranı (%)
+                                </label>
+                                <input type="number" id="tax-rate" class="form-control" value="7.5" min="0" step="0.1" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="store-address">
+                                Mağaza Adresi
+                            </label>
+                            <textarea id="store-address" class="form-control" required>123 E-Commerce St, Online City, 12345</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Settings</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Ürün Düzenleme Modali -->
+    <div class="modal-backdrop" id="edit-product-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>
+                    Ürünü Düzenle
+                </h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="edit-product-form">
+                    <input type="hidden" id="edit-product-id">
+                    <div class="form-group">
+                        <label for="edit-product-name">
+                            Ürün Adı
+                        </label>
+                        <input type="text" id="edit-product-name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-product-category">Kategori</label>
+                        <select id="edit-product-category" class="form-control" required>
+                            <option value="">
+                                Kategori Seçin
+                            </option>
+                            <option value="Electronics">Electronics</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-product-price">Fiyat</label>
+                        <input type="number" id="edit-product-price" class="form-control" min="0" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-product-stock">
+                            Stok Miktarı
+                        </label>
+                        <input type="number" id="edit-product-stock" class="form-control" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-product-description">Açıklama</label>
+                        <textarea id="edit-product-description" class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-product-image">Resim URL</label>
+                        <input type="text" id="edit-product-image" class="form-control" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline modal-close-btn">
+                    İptal et
+                </button>
+                <button class="btn btn-primary" id="save-edit-product">
+                    Değişiklikleri Kaydet
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ürün Onay Modalini Sil -->
+    <div class="modal-backdrop" id="delete-product-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>
+                    Ürünü Sil
+                </h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Bu ürünü silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.
+                </p>
+                <input type="hidden" id="delete-product-id">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline modal-close-btn">İptal Et</button>
+                <button class="btn btn-danger" id="confirm-delete-product">Sil</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // Ürünler için örnek veriler
+        let products = [
+            {
+                id: 1,
+                name: "Smartphone X",
+                category: "Electronics",
+                price: 799.99,
+                stock: 25,
+                status: "in-stock",
+                image: "https://via.placeholder.com/100",
+                description: "Latest smartphone with advanced features and high-resolution camera."
+            },
+            {
+                id: 2,
+                name: "Laptop Pro",
+                category: "Electronics",
+                price: 1299.99,
+                stock: 15,
+                status: "in-stock",
+                image: "https://via.placeholder.com/100",
+                description: "Powerful laptop for professionals with high performance specs."
+            },
+            {
+                id: 3,
+                name: "Wireless Headphones",
+                category: "Electronics",
+                price: 149.99,
+                stock: 8,
+                status: "low-stock",
+                image: "https://via.placeholder.com/100",
+                description: "Premium wireless headphones with noise cancellation."
+            },
+            {
+                id: 4,
+                name: "Cotton T-Shirt",
+                category: "Clothing",
+                price: 24.99,
+                stock: 50,
+                status: "in-stock",
+                image: "https://via.placeholder.com/100",
+                description: "Comfortable cotton t-shirt available in various colors."
+            },
+            {
+                id: 5,
+                name: "Coffee Maker",
+                category: "Home & Kitchen",
+                price: 89.99,
+                stock: 0,
+                status: "out-of-stock",
+                image: "https://via.placeholder.com/100",
+                description: "Automatic coffee maker with timer and multiple brewing options."
+            }
+        ];
+
+        // Sample data for sales chart
+        const salesData = {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            values: [5000, 7500, 6500, 8000, 9500, 11000, 10500, 12000, 12500, 14000, 16000, 18000]
+        };
+
+        // Sample data for products chart
+        const topProductsData = {
+            labels: ['Smartphone X', 'Laptop Pro', 'Wireless Headphones', 'Coffee Maker', 'Cotton T-Shirt'],
+            values: [35, 25, 15, 15, 10]
+        };
+
+        // DOM Elements
+        const navItems = document.querySelectorAll('.nav-item');
+        const sections = document.querySelectorAll('.section');
+        const header = document.querySelector('.header h1');
+        const productsTableBody = document.getElementById('products-table-body');
+        const addProductForm = document.getElementById('add-product-form');
+        const editProductModal = document.getElementById('edit-product-modal');
+        const editProductForm = document.getElementById('edit-product-form');
+        const deleteProductModal = document.getElementById('delete-product-modal');
+        const modalCloseBtns = document.querySelectorAll('.modal-close, .modal-close-btn');
+        const saveEditProductBtn = document.getElementById('save-edit-product');
+        const confirmDeleteProductBtn = document.getElementById('confirm-delete-product');
+        const productSearchInput = document.getElementById('product-search');
+        const settingsForm = document.getElementById('settings-form');
+
+        // Navigation
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const sectionId = item.getAttribute('data-section');
+
+                // Update active nav item
+                navItems.forEach(nav => nav.classList.remove('active'));
+                item.classList.add('active');
+
+                // Update active section
+                sections.forEach(section => section.classList.remove('active'));
+                document.getElementById(sectionId).classList.add('active');
+
+                // Update header
+                header.textContent = item.querySelector('span').textContent;
+
+                // Load data if needed
+                if (sectionId === 'products') {
+                    renderProducts();
+                }
+            });
+        });
+
+        // Render products table
+        function renderProducts(filteredProducts = null) {
+            const productsToRender = filteredProducts || products;
+            productsTableBody.innerHTML = '';
+
+            productsToRender.forEach(product => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td><img src="${product.image}" alt="${product.name}" class="product-image"></td>
+                    <td>${product.name}</td>
+                    <td>${product.category}</td>
+                    <td>$${product.price.toFixed(2)}</td>
+                    <td>${product.stock}</td>
+                    <td><span class="status ${product.status}">${getStatusText(product.status)}</span></td>
+                    <td>
+                        <div class="actions">
+                            <button class="btn-icon edit-product" data-id="${product.id}">✏️</button>
+                            <button class="btn-icon delete-product" data-id="${product.id}">🗑️</button>
+                        </div>
+                    </td>
+                `;
+                productsTableBody.appendChild(tr);
+            });
+
+            // Add event listeners to edit and delete buttons
+            document.querySelectorAll('.edit-product').forEach(btn => {
+                btn.addEventListener('click', () => openEditProductModal(btn.getAttribute('data-id')));
+            });
+
+            document.querySelectorAll('.delete-product').forEach(btn => {
+                btn.addEventListener('click', () => openDeleteProductModal(btn.getAttribute('data-id')));
+            });
+        }
+
+        // Get status text
+        function getStatusText(status) {
+            switch (status) {
+                case 'in-stock':
+                    return 'In Stock';
+                case 'low-stock':
+                    return 'Low Stock';
+                case 'out-of-stock':
+                    return 'Out of Stock';
+                default:
+                    return 'Unknown';
+            }
+        }
+
+        // Add product form submission
+        addProductForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const newProduct = {
+                id: products.length > 0 ? Math.max(...products.map(p => p.id)) + 1 : 1,
+                name: document.getElementById('product-name').value,
+                category: document.getElementById('product-category').value,
+                price: parseFloat(document.getElementById('product-price').value),
+                stock: parseInt(document.getElementById('product-stock').value),
+                status: getStockStatus(parseInt(document.getElementById('product-stock').value)),
+                image: document.getElementById('product-image').value,
+                description: document.getElementById('product-description').value
+            };
+
+            products.push(newProduct);
+            addProductForm.reset();
+
+            // Show success message
+            alert('Product added successfully!');
+        });
+
+        // Determine stock status based on quantity
+        function getStockStatus(quantity) {
+            if (quantity <= 0) return 'out-of-stock';
+            if (quantity < 10) return 'low-stock';
+            return 'in-stock';
+        }
+
+        // Open edit product modal
+        function openEditProductModal(productId) {
+            const product = products.find(p => p.id == productId);
+            if (product) {
+                document.getElementById('edit-product-id').value = product.id;
+                document.getElementById('edit-product-name').value = product.name;
+                document.getElementById('edit-product-category').value = product.category;
+                document.getElementById('edit-product-price').value = product.price;
+                document.getElementById('edit-product-stock').value = product.stock;
+                document.getElementById('edit-product-description').value = product.description;
+                document.getElementById('edit-product-image').value = product.image;
+
+                editProductModal.style.display = 'flex';
+            }
+        }
+
+        // Open delete product modal
+        function openDeleteProductModal(productId) {
+            document.getElementById('delete-product-id').value = productId;
+            deleteProductModal.style.display = 'flex';
+        }
+
+        // Close modals
+        modalCloseBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                editProductModal.style.display = 'none';
+                deleteProductModal.style.display = 'none';
+            });
+        });
+
+        // Save edited product
+        saveEditProductBtn.addEventListener('click', function() {
+            const productId = document.getElementById('edit-product-id').value;
+            const productIndex = products.findIndex(p => p.id == productId);
+
+            if (productIndex !== -1) {
+                products[productIndex] = {
+                    id: parseInt(productId),
+                    name: document.getElementById('edit-product-name').value,
+                    category: document.getElementById('edit-product-category').value,
+                    price: parseFloat(document.getElementById('edit-product-price').value),
+                    stock: parseInt(document.getElementById('edit-product-stock').value),
+                    status: getStockStatus(parseInt(document.getElementById('edit-product-stock').value)),
+                    image: document.getElementById('edit-product-image').value,
+                    description: document.getElementById('edit-product-description').value
+                };
+
+                renderProducts();
+                editProductModal.style.display = 'none';
+                alert('Product updated successfully!');
+            }
+        });
+
+        // Confirm delete product
+        confirmDeleteProductBtn.addEventListener('click', function() {
+            const productId = document.getElementById('delete-product-id').value;
+            products = products.filter(p => p.id != productId);
+
+            renderProducts();
+            deleteProductModal.style.display = 'none';
+            alert('Product deleted successfully!');
+        });
+
+        // Search products
+        productSearchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            if (searchTerm.trim() === '') {
+                renderProducts();
+            } else {
+                const filteredProducts = products.filter(product =>
+                    product.name.toLowerCase().includes(searchTerm) ||
+                    product.category.toLowerCase().includes(searchTerm)
+                );
+                renderProducts(filteredProducts);
+            }
+        });
+
+        // Settings form submission
+        settingsForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Settings saved successfully!');
+        });
+
+        // Draw sales chart
+        function drawSalesChart() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 800;
+            canvas.height = 300;
+            document.getElementById('sales-chart').appendChild(canvas);
+
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            const padding = 40;
+            const chartWidth = width - padding * 2;
+            const chartHeight = height - padding * 2;
+
+            // Draw axes
+            ctx.beginPath();
+            ctx.moveTo(padding, padding);
+            ctx.lineTo(padding, height - padding);
+            ctx.lineTo(width - padding, height - padding);
+            ctx.strokeStyle = '#e5e7eb';
+            ctx.stroke();
+
+            // Draw grid lines
+            const gridLines = 5;
+            ctx.beginPath();
+            for (let i = 0; i <= gridLines; i++) {
+                const y = padding + (chartHeight / gridLines) * i;
+                ctx.moveTo(padding, y);
+                ctx.lineTo(width - padding, y);
+            }
+            ctx.strokeStyle = '#f3f4f6';
+            ctx.stroke();
+
+            // Draw labels
+            ctx.fillStyle = '#6b7280';
+            ctx.font = '12px Arial';
+            ctx.textAlign = 'center';
+
+            // X-axis labels
+            const barWidth = chartWidth / salesData.labels.length;
+            salesData.labels.forEach((label, i) => {
+                const x = padding + barWidth * i + barWidth / 2;
+                ctx.fillText(label, x, height - padding + 20);
+            });
+
+            // Y-axis labels
+            const maxValue = Math.max(...salesData.values);
+            for (let i = 0; i <= gridLines; i++) {
+                const value = maxValue - (maxValue / gridLines) * i;
+                const y = padding + (chartHeight / gridLines) * i;
+                ctx.textAlign = 'right';
+                ctx.fillText('$' + Math.round(value).toLocaleString(), padding - 10, y + 5);
+            }
+
+            // Draw data line
+            ctx.beginPath();
+            salesData.values.forEach((value, i) => {
+                const x = padding + barWidth * i + barWidth / 2;
+                const y = height - padding - (value / maxValue) * chartHeight;
+
+                if (i === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            });
+            ctx.strokeStyle = '#4f46e5';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Draw data points
+            salesData.values.forEach((value, i) => {
+                const x = padding + barWidth * i + barWidth / 2;
+                const y = height - padding - (value / maxValue) * chartHeight;
+
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, Math.PI * 2);
+                ctx.fillStyle = '#4f46e5';
+                ctx.fill();
+                ctx.strokeStyle = '#ffffff';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            });
+        }
+
+        // Draw products chart
+        function drawProductsChart() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 400;
+            canvas.height = 300;
+            document.getElementById('products-chart').appendChild(canvas);
+
+            const ctx = canvas.getContext('2d');
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = Math.min(centerX, centerY) - 40;
+
+            let startAngle = 0;
+            const total = topProductsData.values.reduce((sum, value) => sum + value, 0);
+
+            // Draw pie slices
+            const colors = ['#4f46e5', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
+
+            topProductsData.values.forEach((value, i) => {
+                const sliceAngle = 2 * Math.PI * value / total;
+
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.arc(centerX, centerY, radius, startAngle, startAngle + sliceAngle);
+                ctx.closePath();
+
+                ctx.fillStyle = colors[i % colors.length];
+                ctx.fill();
+
+                startAngle += sliceAngle;
+            });
+
+            // Draw legend
+            const legendX = canvas.width - 150;
+            const legendY = 40;
+
+            topProductsData.labels.forEach((label, i) => {
+                const y = legendY + i * 25;
+
+                // Draw color box
+                ctx.fillStyle = colors[i % colors.length];
+                ctx.fillRect(legendX, y, 15, 15);
+
+                // Draw label
+                ctx.fillStyle = '#1f2937';
+                ctx.font = '12px Arial';
+                ctx.textAlign = 'left';
+                ctx.fillText(label, legendX + 25, y + 12);
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProducts();
+            drawSalesChart();
+            drawProductsChart();
+        });
+    </script>
+</body>
+</html>

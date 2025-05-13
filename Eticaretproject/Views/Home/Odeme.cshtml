@@ -1,0 +1,575 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödeme</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f7;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Header */
+        .header {
+            background-color: #3f26ad;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+            .logo span {
+                color: #3f26ad;
+            }
+
+        /* Progress bar */
+        .progress-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+        }
+
+        .step-number {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #3f26ad;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .step-text {
+            font-weight: bold;
+        }
+
+        .step-divider {
+            width: 100px;
+            height: 2px;
+            background-color: #ddd;
+            margin: 0 20px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Payment section */
+        .payment-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .payment-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .payment-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .payment-content {
+            padding: 20px;
+        }
+
+        /* Form styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+            .form-input:focus {
+                border-color: #3f26ad;
+                outline: none;
+            }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+            .form-row .form-group {
+                flex: 1;
+            }
+
+        /* Card styles */
+        .card-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .card-header {
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .card-preview {
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            height: 200px;
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            position: relative;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-chip {
+            width: 50px;
+            height: 40px;
+            background-color: #3f26ad;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .card-number {
+            font-size: 22px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-holder, .card-expiry {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .card-value {
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        .card-brand {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        /* Order summary */
+        .order-summary {
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            align-self: flex-start;
+        }
+
+        .summary-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .summary-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .summary-content {
+            padding: 15px 20px;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+            .summary-row.total {
+                font-size: 18px;
+                font-weight: 600;
+                padding-top: 15px;
+                border-top: 1px solid #eee;
+                margin-top: 15px;
+            }
+
+        .summary-products {
+            margin-top: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .summary-product {
+            display: flex;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .summary-product-name {
+            flex: 1;
+        }
+
+        .summary-product-quantity {
+            margin: 0 10px;
+            color: #777;
+        }
+
+        .complete-btn {
+            background-color: #3f26ad;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+
+            .complete-btn:hover {
+                background-color: #3f26ad;
+            }
+
+        /* Responsive */
+        @@media (max-width: 768px) {
+            .container
+
+        {
+            flex-direction: column;
+        }
+
+        .order-summary {
+            width: 100%;
+        }
+
+        .form-row {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .step-divider {
+            width: 50px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="cart.html" class="logo"><span>OOPG19</span></a>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-text">Sepet</div>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-text">Teslimat ve Ödeme</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <!-- Payment Section -->
+            <section class="payment-section">
+                <div class="payment-header">
+                    <h1 class="payment-title">Ödeme Bilgileri</h1>
+                </div>
+
+                <div class="payment-content">
+                    <div class="card-container">
+                        <div class="card-header">
+                            <h2 class="card-title">
+                                <span class="card-icon">💳</span> Kredi/Banka Kartı
+                            </h2>
+                        </div>
+
+                        <!-- Card Preview -->
+                        <div class="card-preview">
+                            <div class="card-brand">VISA</div>
+                            <div class="card-chip"></div>
+                            <div class="card-number" id="card-number-preview">•••• •••• •••• ••••</div>
+                            <div class="card-details">
+                                <div class="card-holder">
+                                    <div class="card-label">Kart Sahibi</div>
+                                    <div class="card-value" id="card-holder-preview">AD SOYAD</div>
+                                </div>
+                                <div class="card-expiry">
+                                    <div class="card-label">Son Kullanma</div>
+                                    <div class="card-value" id="card-expiry-preview">MM/YY</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Form -->
+                        <form id="payment-form">
+                            <div class="form-group">
+                                <label for="card-holder" class="form-label">Kart Sahibinin Adı Soyadı</label>
+                                <input type="text" id="card-holder" class="form-input" placeholder="Kart üzerindeki isim" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="card-number" class="form-label">Kart Numarası</label>
+                                <input type="text" id="card-number" class="form-input" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="card-expiry" class="form-label">Son Kullanma Tarihi</label>
+                                    <input type="text" id="card-expiry" class="form-input" placeholder="MM/YY" maxlength="5" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="card-cvv" class="form-label">Güvenlik Kodu (CVV)</label>
+                                    <input type="text" id="card-cvv" class="form-input" placeholder="123" maxlength="3" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <div class="summary-header">
+                <h2 class="summary-title">Sipariş Özeti</h2>
+            </div>
+            <div class="summary-content">
+                <div class="summary-row">
+                    <span>Ürünler Toplamı</span>
+                    <span id="subtotal">0 TL</span>
+                </div>
+                <div class="summary-row">
+                    <span>Kargo</span>
+                    <span>Ücretsiz</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Toplam</span>
+                    <span id="total">0 TL</span>
+                </div>
+
+                <div class="summary-products" id="summary-products">
+                    <!-- Products will be added dynamically -->
+                </div>
+
+                <button class="complete-btn" id="complete-btn">Siparişi Tamamla</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get elements
+        const subtotalElement = document.getElementById('subtotal');
+        const totalElement = document.getElementById('total');
+        const summaryProducts = document.getElementById('summary-products');
+        const completeBtn = document.getElementById('complete-btn');
+
+        // Card preview elements
+        const cardNumberPreview = document.getElementById('card-number-preview');
+        const cardHolderPreview = document.getElementById('card-holder-preview');
+        const cardExpiryPreview = document.getElementById('card-expiry-preview');
+
+        // Card form elements
+        const cardHolderInput = document.getElementById('card-holder');
+        const cardNumberInput = document.getElementById('card-number');
+        const cardExpiryInput = document.getElementById('card-expiry');
+        const cardCvvInput = document.getElementById('card-cvv');
+
+        // Get cart from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Format price
+        function formatPrice(price) {
+            return price.toLocaleString('tr-TR') + ' TL';
+        }
+
+        // Format card number
+        function formatCardNumber(value) {
+            const v = value.replace(/\s+/g, '').replace(/[^0-9]/gi, '');
+            const matches = v.match(/\d{4,16}/g);
+            const match = matches && matches[0] || '';
+            const parts = [];
+
+            for (let i = 0, len = match.length; i < len; i += 4) {
+                parts.push(match.substring(i, i + 4));
+            }
+
+            if (parts.length) {
+                return parts.join(' ');
+            } else {
+                return value;
+            }
+        }
+
+        // Format expiry date
+        function formatExpiryDate(value) {
+            const v = value.replace(/\s+/g, '').replace(/[^0-9]/gi, '');
+
+            if (v.length >= 2) {
+                return v.slice(0, 2) + '/' + v.slice(2, 4);
+            }
+
+            return v;
+        }
+
+        // Render order summary
+        function renderOrderSummary() {
+            // Calculate totals
+            const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+
+            // Update summary
+            subtotalElement.textContent = formatPrice(subtotal);
+            totalElement.textContent = formatPrice(subtotal);
+
+            // Clear products
+            summaryProducts.innerHTML = '';
+
+            // Add products
+            cart.forEach(item => {
+                const product = document.createElement('div');
+                product.className = 'summary-product';
+                product.innerHTML = `
+                    <div class="summary-product-name">${item.name}</div>
+                    <div class="summary-product-quantity">x${item.quantity}</div>
+                    <div class="summary-product-price">${formatPrice(item.price * item.quantity)}</div>
+                `;
+                summaryProducts.appendChild(product);
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Render order summary
+            renderOrderSummary();
+
+            // Card holder input
+            cardHolderInput.addEventListener('input', (e) => {
+                cardHolderPreview.textContent = e.target.value || 'AD SOYAD';
+            });
+
+            // Card number input
+            cardNumberInput.addEventListener('input', (e) => {
+                e.target.value = formatCardNumber(e.target.value);
+                cardNumberPreview.textContent = e.target.value || '•••• •••• •••• ••••';
+            });
+
+            // Card expiry input
+            cardExpiryInput.addEventListener('input', (e) => {
+                e.target.value = formatExpiryDate(e.target.value);
+                cardExpiryPreview.textContent = e.target.value || 'MM/YY';
+            });
+
+            // Complete order
+            completeBtn.addEventListener('click', () => {
+                // Validate form
+                const form = document.getElementById('payment-form');
+                if (!form.checkValidity()) {
+                    alert('Lütfen tüm alanları doldurun.');
+                    return;
+                }
+
+                // Simulate order completion
+                alert('Siparişiniz başarıyla tamamlandı! Teşekkür ederiz.');
+
+                // Clear cart
+                cart = [];
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                // Redirect to cart page
+                window.location.href = 'cart.html';
+            });
+        });
+    </script>
+</body>
+</html>

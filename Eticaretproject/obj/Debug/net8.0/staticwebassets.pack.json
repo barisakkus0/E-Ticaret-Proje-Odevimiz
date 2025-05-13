@@ -1,0 +1,1113 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Eticaretproject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Eticaretproject.iwcbn4mbzu.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\css\\main.css",
+      "PackagePath": "staticwebassets\\LoginScript\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\css\\util.css",
+      "PackagePath": "staticwebassets\\LoginScript\\css\\util.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\iconic\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\iconic\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\iconic\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\iconic\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\fonts\\poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\LoginScript\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\images\\icons\\favicon.ico",
+      "PackagePath": "staticwebassets\\LoginScript\\images\\icons\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\js\\main.js",
+      "PackagePath": "staticwebassets\\LoginScript\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\animate\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\animsition\\css\\animsition.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\animsition\\css\\animsition.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\animsition\\css\\animsition.min.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\animsition\\css\\animsition.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\animsition\\js\\animsition.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\animsition\\js\\animsition.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\animsition\\js\\animsition.min.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\countdowntime\\countdowntime.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\countdowntime\\countdowntime.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\daterangepicker\\moment.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\daterangepicker\\moment.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\daterangepicker\\moment.min.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\daterangepicker\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\select2\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\select2\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\LoginScript\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\LoginScript\\vendor\\select2\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\Sepet\\Sepet.css",
+      "PackagePath": "staticwebassets\\Sepet\\Sepet.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\css\\style.css",
+      "PackagePath": "staticwebassets\\SignUpScript\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\SignUpScript\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\material-icon\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\material-icon\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\material-icon\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\material-icon\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\Montserrat-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\Montserrat-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\Montserrat-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\Montserrat-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\Montserrat-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\Montserrat-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\Montserrat-Italic.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\Montserrat-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\Montserrat-Light.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\Montserrat-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\Montserrat-Medium.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\Montserrat-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\Montserrat-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\Montserrat-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\Montserrat-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\OFL.txt",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.eot",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.svg",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.ttf",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.woff",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.woff2",
+      "PackagePath": "staticwebassets\\SignUpScript\\fonts\\montserrat\\montserrat-v12-latin-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\images\\checked.gif",
+      "PackagePath": "staticwebassets\\SignUpScript\\images\\checked.gif"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\images\\unchecked.gif",
+      "PackagePath": "staticwebassets\\SignUpScript\\images\\unchecked.gif"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\js\\main.js",
+      "PackagePath": "staticwebassets\\SignUpScript\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\scss\\common\\extend.scss",
+      "PackagePath": "staticwebassets\\SignUpScript\\scss\\common\\extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\scss\\common\\fonts.scss",
+      "PackagePath": "staticwebassets\\SignUpScript\\scss\\common\\fonts.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\scss\\common\\global.scss",
+      "PackagePath": "staticwebassets\\SignUpScript\\scss\\common\\global.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\scss\\common\\minxi.scss",
+      "PackagePath": "staticwebassets\\SignUpScript\\scss\\common\\minxi.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\scss\\common\\variables.scss",
+      "PackagePath": "staticwebassets\\SignUpScript\\scss\\common\\variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\scss\\layouts\\main.scss",
+      "PackagePath": "staticwebassets\\SignUpScript\\scss\\layouts\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\scss\\layouts\\responsive.scss",
+      "PackagePath": "staticwebassets\\SignUpScript\\scss\\layouts\\responsive.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\SignUpScript\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\vendor\\jquery\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\SignUpScript\\vendor\\jquery\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\SignUpScript\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\SignUpScript\\vendor\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\css\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\default-skin.css",
+      "PackagePath": "staticwebassets\\css\\default-skin.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\icomoon.css",
+      "PackagePath": "staticwebassets\\css\\icomoon.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\jquery.mCustomScrollbar.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\meanmenu.css",
+      "PackagePath": "staticwebassets\\css\\meanmenu.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\normalize.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\slick.css",
+      "PackagePath": "staticwebassets\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\anasayfaResim.jpg",
+      "PackagePath": "staticwebassets\\images\\anasayfaResim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\calendar-icon.png",
+      "PackagePath": "staticwebassets\\images\\calendar-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\call-icon.png",
+      "PackagePath": "staticwebassets\\images\\call-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\camera-img.png",
+      "PackagePath": "staticwebassets\\images\\camera-img.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\computer-img.png",
+      "PackagePath": "staticwebassets\\images\\computer-img.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\down-arrow.png",
+      "PackagePath": "staticwebassets\\images\\down-arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\fb-icon.png",
+      "PackagePath": "staticwebassets\\images\\fb-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\footer-logo.png",
+      "PackagePath": "staticwebassets\\images\\footer-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\img-1.png",
+      "PackagePath": "staticwebassets\\images\\img-1.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\img-2.png",
+      "PackagePath": "staticwebassets\\images\\img-2.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\img-3.png",
+      "PackagePath": "staticwebassets\\images\\img-3.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\img-4.png",
+      "PackagePath": "staticwebassets\\images\\img-4.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\instagram-icon.png",
+      "PackagePath": "staticwebassets\\images\\instagram-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\laptop-img.png",
+      "PackagePath": "staticwebassets\\images\\laptop-img.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\linkedin-icon.png",
+      "PackagePath": "staticwebassets\\images\\linkedin-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\mac-img.png",
+      "PackagePath": "staticwebassets\\images\\mac-img.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\mail-icon.png",
+      "PackagePath": "staticwebassets\\images\\mail-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\map-icon.png",
+      "PackagePath": "staticwebassets\\images\\map-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\mobile-img.png",
+      "PackagePath": "staticwebassets\\images\\mobile-img.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\quick-icon.png",
+      "PackagePath": "staticwebassets\\images\\quick-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\search-icon.png",
+      "PackagePath": "staticwebassets\\images\\search-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\toggle-icon.png",
+      "PackagePath": "staticwebassets\\images\\toggle-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\trolly-icon.png",
+      "PackagePath": "staticwebassets\\images\\trolly-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\twitter-icon.png",
+      "PackagePath": "staticwebassets\\images\\twitter-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\user-icon.png",
+      "PackagePath": "staticwebassets\\images\\user-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\watch-img.png",
+      "PackagePath": "staticwebassets\\images\\watch-img.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\images\\youtub-icon.png",
+      "PackagePath": "staticwebassets\\images\\youtub-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\jquery-3.0.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.0.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\modernizer.js",
+      "PackagePath": "staticwebassets\\js\\modernizer.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugin.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\js\\slider-setting.js",
+      "PackagePath": "staticwebassets\\js\\slider-setting.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Eticaretproject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Eticaretproject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Eticaretproject.props",
+      "PackagePath": "build\\Eticaretproject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Eticaretproject.props",
+      "PackagePath": "buildMultiTargeting\\Eticaretproject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Eticaretproject.props",
+      "PackagePath": "buildTransitive\\Eticaretproject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

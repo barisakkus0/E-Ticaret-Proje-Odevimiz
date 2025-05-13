@@ -1,0 +1,659 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>OOPG19 E-Ticaret</title>
+    <meta name="description" content="OOPG19 E-Ticaret Sitesi">
+    <meta name="author" content="OOPG19">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif">
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <style>
+        /* Header Styles */
+        .logo-title {
+            margin-left: 2cm;
+            text-align: left;
+        }
+
+        .search-bar-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-form {
+            display: flex;
+            width: 60%;
+            max-width: 600px;
+            border: 2px solid orange;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+            .search-form input[type="text"] {
+                flex: 1;
+                padding: 10px 20px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+            }
+
+            .search-form button {
+                background-color: orange;
+                border: none;
+                padding: 0 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .search-form button img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+        /* Product Card Styles */
+        .box_man {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            min-height: 430px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .box_man:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+
+        .cart_main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .left_content {
+            text-align: left;
+            flex: 1;
+        }
+
+        .right_content {
+            text-align: right;
+            margin-left: 10px;
+        }
+
+        .cart_bt a {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 6px 12px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+            transition: background-color 0.3s;
+        }
+
+            .cart_bt a:hover {
+                background-color: #ff3333;
+            }
+
+        .samsung_text {
+            font-weight: bold;
+        }
+
+        .rate_text, .rate_text_1 {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+            .rate_text a {
+                color: #ff4d4d;
+                font-weight: bold;
+            }
+
+        .rate_text_1 {
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .like_icon {
+            color: #ccc;
+            font-size: 22px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .like_icon.liked {
+                color: #ff4d4d;
+            }
+
+        .rating_stars i {
+            color: #ccc;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+            .rating_stars i.filled {
+                color: gold;
+            }
+
+        .mobile_text {
+            font-weight: bold;
+        }
+
+        /* Responsive Adjustments */
+        @@media (max-width: 768px) {
+            .search-form
+
+        {
+            width: 90%;
+        }
+
+        .logo-title {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        }
+
+        .cart_bt button {
+            background: #ff2954;
+            color: white;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+            .cart_bt button:hover {
+                background-color: #bd0029;
+                transform: translateY(-2px);
+            }
+    </style>
+   
+
+</head>
+
+<body>
+    <div class="header_section haeder_main">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light justify-content-between align-items-center">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Anasayfa</a>
+                    <a href="computers.html">Bilgisayar</a>
+                    <a href="contact.html">İletişim</a>
+                    <a href="/Home/Admin">Admin Panel</a>
+
+                </div>
+
+                <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()">
+                    <img src="~/images/toggle-icon.png">
+                </span>
+
+                <!-- Logo and search bar in a flex container -->
+                <div class="d-flex align-items-center flex-grow-1 mx-3">
+                    <div class="logo-container mr-3">
+                        <h1 class="logo-title mb-0">OOPG19</h1>
+                    </div>
+
+                    <!-- Search bar moved here, next to the logo -->
+                    <div class="search-bar-container flex-grow-1">
+                        <form class="search-form">
+                            <input type="text" placeholder="Ürün, kategori veya marka ara">
+                            <button type="submit">
+                                <img src="~/images/search-icon.png" alt="Ara">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <form class="form-inline">
+                    <div class="login_text">
+                        <ul>
+                            <li><a href="/Home/Login"><img src="~/images/user-icon.png"></a></li>
+                            <li><a href="/Home/Sepet"><img src="~/images/trolly-icon.png"></a></li>
+                        </ul>
+                    </div>
+                </form>
+            </nav>
+            <!-- Removed the original search-bar-container from here -->
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="banner_section layout_padding">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row border_1 align-items-center">
+                            <div class="col-md-4">
+                                <div class="image_1"><img src="~/images/img-1.png" class="img-fluid" alt="Ürün"></div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <h1 class="banner_taital">BÜYÜK İNDİRİM</h1>
+                                <div class="buynow_bt active"><a href="#" class="btn">ŞİMDİ AL</a></div>
+                                <div class="contact_bt"><a href="contact.html" class="btn">İLETİŞİME GEÇ</a></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="image_2"><img src="~/images/img-2.png" class="img-fluid" alt="Ürün"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row border_1 align-items-center">
+                            <div class="col-md-4">
+                                <div class="image_1"><img src="~/images/img-1.png" class="img-fluid" alt="Ürün"></div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <h1 class="banner_taital">BÜYÜK İNDİRİM</h1>
+                                <div class="buynow_bt active"><a href="#" class="btn">ŞİMDİ AL</a></div>
+                                <div class="contact_bt"><a href="contact.html" class="btn">İLETİŞİME GEÇ</a></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="image_2"><img src="~/images/img-2.png" class="img-fluid" alt="Ürün"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row border_1 align-items-center">
+                            <div class="col-md-4">
+                                <div class="image_1"><img src="~/images/img-1.png" class="img-fluid" alt="Ürün"></div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <h1 class="banner_taital">BÜYÜK İNDİRİM</h1>
+                                <div class="buynow_bt active"><a href="#" class="btn">ŞİMDİ AL</a></div>
+                                <div class="contact_bt"><a href="contact.html" class="btn">İLETİŞİME GEÇ</a></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="image_2"><img src="~/images/img-2.png" class="img-fluid" alt="Ürün"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="catagary_section layout_padding">
+        <div class="container">
+            <div class="catagary_main d-flex justify-content-between align-items-center">
+                <div class="catagary_left">
+                    <h2 class="categary_text">KATEGORİ</h2>
+                </div>
+                <div class="catagary_right">
+                    <div class="catagary_menu">
+                        <ul class="list-unstyled d-flex gap-4 mb-0">
+                            <li><a href="#" class="category-link">TELEFON</a></li>
+                            <li><a href="#" class="category-link">BİLGİSAYAR</a></li>
+                            <li><a href="#" class="category-link">TELEVİZYON</a></li>
+                            <li><a href="#" class="category-link">FOTOĞRAF VE KAMERA SİSTEMLERİ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products_section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Phone Product -->
+                <div class="col-md-4">
+                    <div class="box_man">
+                        <h3 class="mobile_text">TELEFON</h3>
+                        <div class="product-image">
+                            <img src="~/images/mobile-img.png" alt="Telefon" width="150" class="img-fluid">
+                        </div>
+                        <div class="cart_main">
+                            <div class="left_content">
+                                <div class="cart_bt">
+                                    <button type="button">Sepete Ekle</button>
+                                </div>
+                                <h4 class="samsung_text">Samsung</h4>
+                                <h6 class="rate_text"><a href="#">$500</a></h6>
+                                <h6 class="rate_text_1">$1000</h6>
+                            </div>
+                            <div class="right_content">
+                                <div class="like_icon"><i class="fa-regular fa-heart"></i></div>
+                                <div class="rating_stars">
+                                    <i class="fa-solid fa-star" data-index="0"></i>
+                                    <i class="fa-solid fa-star" data-index="1"></i>
+                                    <i class="fa-solid fa-star" data-index="2"></i>
+                                    <i class="fa-solid fa-star" data-index="3"></i>
+                                    <i class="fa-solid fa-star" data-index="4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watch Product -->
+                <div class="col-md-4">
+                    <div class="box_man">
+                        <h3 class="mobile_text">WATCH</h3>
+                        <div class="product-image">
+                            <img src="~/images/watch-img.png" alt="Watch" width="150" class="img-fluid">
+                        </div>
+                        <div class="cart_main">
+                            <div class="left_content">
+                                <div class="cart_bt">
+                                    <button type="button">Sepete Ekle</button>
+                                </div>
+                                <h4 class="samsung_text">Samsung</h4>
+                                <h6 class="rate_text"><a href="#">$500</a></h6>
+                                <h6 class="rate_text_1">$1000</h6>
+                            </div>
+                            <div class="right_content">
+                                <div class="like_icon"><i class="fa-regular fa-heart"></i></div>
+                                <div class="rating_stars">
+                                    <i class="fa-solid fa-star" data-index="0"></i>
+                                    <i class="fa-solid fa-star" data-index="1"></i>
+                                    <i class="fa-solid fa-star" data-index="2"></i>
+                                    <i class="fa-solid fa-star" data-index="3"></i>
+                                    <i class="fa-solid fa-star" data-index="4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Camera Product -->
+                <div class="col-md-4">
+                    <div class="box_man">
+                        <h3 class="mobile_text">CAMERA</h3>
+                        <div class="product-image">
+                            <img src="~/images/camera-img.png" alt="Camera" width="150" class="img-fluid">
+                        </div>
+                        <div class="cart_main">
+                            <div class="left_content">
+                                <div class="cart_bt">
+                                    <button type="button">Sepete Ekle</button>
+                                </div>
+                                <h4 class="samsung_text">Samsung</h4>
+                                <h6 class="rate_text"><a href="#">$500</a></h6>
+                                <h6 class="rate_text_1">$1000</h6>
+                            </div>
+                            <div class="right_content">
+                                <div class="like_icon"><i class="fa-regular fa-heart"></i></div>
+                                <div class="rating_stars">
+                                    <i class="fa-solid fa-star" data-index="0"></i>
+                                    <i class="fa-solid fa-star" data-index="1"></i>
+                                    <i class="fa-solid fa-star" data-index="2"></i>
+                                    <i class="fa-solid fa-star" data-index="3"></i>
+                                    <i class="fa-solid fa-star" data-index="4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="computers_section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Desktop Computer -->
+                <div class="col-md-4">
+                    <div class="box_man">
+                        <h3 class="mobile_text">COMPUTER</h3>
+                        <div class="product-image">
+                            <img src="~/images/computer-img.png" alt="Computer" width="150" class="img-fluid">
+                        </div>
+                        <div class="cart_main">
+                            <div class="left_content">
+                                <div class="cart_bt">
+                                    <button type="button">Sepete Ekle</button>
+                                </div>
+                                <h4 class="samsung_text">Samsung</h4>
+                                <h6 class="rate_text"><a href="#">$500</a></h6>
+                                <h6 class="rate_text_1">$1000</h6>
+                            </div>
+                            <div class="right_content">
+                                <div class="like_icon"><i class="fa-regular fa-heart"></i></div>
+                                <div class="rating_stars">
+                                    <i class="fa-solid fa-star" data-index="0"></i>
+                                    <i class="fa-solid fa-star" data-index="1"></i>
+                                    <i class="fa-solid fa-star" data-index="2"></i>
+                                    <i class="fa-solid fa-star" data-index="3"></i>
+                                    <i class="fa-solid fa-star" data-index="4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop -->
+                <div class="col-md-4">
+                    <div class="box_man">
+                        <h3 class="mobile_text">LAPTOP</h3>
+                        <div class="product-image">
+                            <img src="~/images/laptop-img.png" alt="Laptop" width="150" class="img-fluid">
+                        </div>
+                        <div class="cart_main">
+                            <div class="left_content">
+                                <div class="cart_bt">
+                                    <button type="button">Sepete Ekle</button>
+                                </div>
+                                <h4 class="samsung_text">Dell</h4>
+                                <h6 class="rate_text"><a href="#">$500</a></h6>
+                                <h6 class="rate_text_1">$1000</h6>
+                            </div>
+                            <div class="right_content">
+                                <div class="like_icon"><i class="fa-regular fa-heart"></i></div>
+                                <div class="rating_stars">
+                                    <i class="fa-solid fa-star" data-index="0"></i>
+                                    <i class="fa-solid fa-star" data-index="1"></i>
+                                    <i class="fa-solid fa-star" data-index="2"></i>
+                                    <i class="fa-solid fa-star" data-index="3"></i>
+                                    <i class="fa-solid fa-star" data-index="4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mac -->
+                <div class="col-md-4">
+                    <div class="box_man">
+                        <h3 class="mobile_text">macOS</h3>
+                        <div class="product-image">
+                            <img src="~/images/mac-img.png" alt="Mac" width="150" class="img-fluid">
+                        </div>
+                        <div class="cart_main">
+                            <div class="left_content">
+                                <div class="cart_bt">
+                                    <button type="button">Sepete Ekle</button>
+                                </div>
+                                <h4 class="samsung_text">Apple</h4>
+                                <h6 class="rate_text"><a href="#">$500</a></h6>
+                                <h6 class="rate_text_1">$1000</h6>
+                            </div>
+                            <div class="right_content">
+                                <div class="like_icon"><i class="fa-regular fa-heart"></i></div>
+                                <div class="rating_stars">
+                                    <i class="fa-solid fa-star" data-index="0"></i>
+                                    <i class="fa-solid fa-star" data-index="1"></i>
+                                    <i class="fa-solid fa-star" data-index="2"></i>
+                                    <i class="fa-solid fa-star" data-index="3"></i>
+                                    <i class="fa-solid fa-star" data-index="4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer_section layout_padding margin_top_90">
+        <div class="container">
+            <div class="footer_logo_main">
+                <h1 style="color : white">  OOPG19</h1>
+                <div class="social_icon">
+                    <ul>
+                        <li><a href="https://www.facebook.com/search/top/?q=fenerbah%C3%A7e"><img src="images/fb-icon.png"></a></li>
+                        <li><a href="https://x.com/Fenerbahce"><img src="images/twitter-icon.png"></a></li>
+                        <li><a href="https://www.instagram.com/fenerbahce/"><img src="images/instagram-icon.png"></a></li>
+                        <li><a href="https://www.youtube.com/fenerbahce"><img src="images/youtub-icon.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_section_2">
+                <div class="row">
+                    <!-- About Us -->
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <h4 class="adderss_text">Hakkımızda</h4>
+                        <p class="ipsum_text">OOPG19 E-Ticaret Sitesi Proje Ödevi</p>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <h4 class="adderss_text">Menü</h4>
+                        <div class="footer_menu">
+                            <ul class="list-unstyled">
+                                <li><a href="@Url.Action("Index", "Home")">Anasayfa</a></li>
+                                <li><a href="https://www.fenerbahce.org/taraftar/stat-turu/iletisim">İletişime Geç</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-lg-3 col-sm-6">
+                        <h4 class="adderss_text">İLETİŞİM</h4>
+                        <div class="contact_info">
+                            <div class="call_text mb-3">
+                                <img src="~/images/map-icon.png" alt="Adres" class="me-2">
+                                <span class="paddlin_left_0">
+                                    <a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCDQ0NzRqMGo3qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=tr&sa=X&geocode=KYkTTXhwuMoUMXCehWQXkvQr&daddr=Z%C3%BCht%C3%BCpa%C5%9Fa,+Recep+Peker+Cd.+No:3+D:1,+34724+Kad%C4%B1k%C3%B6y/%C4%B0stanbul">
+                                        34724 Kadıköy/İstanbul
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="call_text mb-3">
+                                <img src="~/images/call-icon.png" alt="Telefon" class="me-2">
+                                <span class="paddlin_left_0">
+                                    <a href="https://www.fenerbahce.org/taraftar/stat-turu/iletisim">+90 (216) 5421750</a>
+                                </span>
+                            </div>
+                            <div class="call_text">
+                                <img src="~/images/mail-icon.png" alt="Email" class="me-2">
+                                <span class="paddlin_left_0">
+                                    <a href="https://www.fenerbahce.org/taraftar/stat-turu/iletisim">fenerbahce.org</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="~/https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Side Navigation Functions
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        // Product Interaction Functions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Like Icon Functionality
+            document.querySelectorAll('.like_icon').forEach(icon => {
+                icon.addEventListener('click', () => {
+                    icon.classList.toggle('liked');
+                    const heart = icon.querySelector('i');
+                    if (icon.classList.contains('liked')) {
+                        heart.classList.remove('fa-regular');
+                        heart.classList.add('fa-solid');
+                    } else {
+                        heart.classList.remove('fa-solid');
+                        heart.classList.add('fa-regular');
+                    }
+                });
+            });
+
+            // Star Rating Functionality
+            document.querySelectorAll('.rating_stars').forEach(starContainer => {
+                const stars = starContainer.querySelectorAll('i');
+                stars.forEach((star, index) => {
+                    star.addEventListener('click', () => {
+                        stars.forEach((s, i) => {
+                            s.classList.toggle('filled', i <= index);
+                        });
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
