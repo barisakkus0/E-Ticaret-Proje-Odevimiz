@@ -1,7 +1,8 @@
 ﻿    using System.Diagnostics;
     using Eticaretproject.Models;
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.EntityFrameworkCore; // Include için gerekli
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore; // Include için gerekli
     using Microsoft.Extensions.Logging; // ILogger için gerekli
 
     namespace Eticaretproject.Controllers
@@ -49,13 +50,14 @@
             }
 
         public IActionResult Urunler()
-            {
-                // Ürünleri kategorileriyle birlikte eager loading ile getiriyoruz
-                var urunler = _context.Urunlers.Include(u => u.Kategori).ToList();
-                return View(urunler);
-            }
+        {
+            ViewBag.Kategoriler = _context.Kategorilers.ToList(); // Kategorileri ViewBag'e gönder
+            var urunler = _context.Urunlers.Include(u => u.Kategoriler).ToList(); // Ürünleri kategoriyle birlikte getir
+            return View(urunler);
+        }
 
-            public IActionResult Kategoriler()
+
+        public IActionResult Kategoriler()
             {
                 var kategoriler = _context.Kategorilers.ToList();
                 return View(kategoriler);
@@ -81,5 +83,29 @@
             {
                 return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
             }
+
+        public IActionResult UrunEkle()
+        {
+            ViewBag.Kategoriler = new SelectList(_context.Kategorilers.ToList(), "KategoriId", "KategoriAdi");
+            return View();
         }
+
+
+        [HttpPost]
+        public IActionResult UrunEkle(Urunler urun)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Urunlers.Add(urun);
+                _context.SaveChanges();
+                return RedirectToAction("Urunler");
+            }
+            ViewBag.Kategoriler = new SelectList(_context.Kategorilers.ToList(), "KategoriId", "KategoriAdi");
+            return View(urun); 
+        }
+
+
+
+
     }
+}

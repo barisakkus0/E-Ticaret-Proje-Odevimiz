@@ -5,7 +5,7 @@ namespace Eticaretproject.Models;
 
 public partial class Oneriler
 {
-    // propeties
+    
     public int OneriId { get; set; }
 
     public int? KullaniciId { get; set; }

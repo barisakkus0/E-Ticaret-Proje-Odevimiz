@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\models\\oneriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\models\\oneriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\views\\home\\urunler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\views\\home\\urunler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\views\\home\\urunekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\views\\home\\urunekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\models\\urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\models\\urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\models\\eticaretcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\models\\eticaretcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\monster\\documents\\github\\e-ticaret-proje-odevimiz\\eticaretproject\\models\\kategoriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\models\\kategoriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Oneriler.cs",
-              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\Oneriler.cs",
-              "RelativeDocumentMoniker": "Eticaretproject\\Models\\Oneriler.cs",
-              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\Oneriler.cs",
-              "RelativeToolTip": "Eticaretproject\\Models\\Oneriler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Eticaretproject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAswG4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T23:17:52.762Z",
+              "WhenOpened": "2025-05-15T21:30:18.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Urunler.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\Urunler.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Models\\Urunler.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\Urunler.cs",
+              "RelativeToolTip": "Eticaretproject\\Models\\Urunler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:52:23.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UrunEkle.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Views\\Home\\UrunEkle.cshtml",
+              "RelativeDocumentMoniker": "Eticaretproject\\Views\\Home\\UrunEkle.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Views\\Home\\UrunEkle.cshtml",
+              "RelativeToolTip": "Eticaretproject\\Views\\Home\\UrunEkle.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-15T23:32:37.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Urunler.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Views\\Home\\Urunler.cshtml",
+              "RelativeDocumentMoniker": "Eticaretproject\\Views\\Home\\Urunler.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Views\\Home\\Urunler.cshtml",
+              "RelativeToolTip": "Eticaretproject\\Views\\Home\\Urunler.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwDEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-15T21:40:20.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EticaretContext.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\EticaretContext.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Models\\EticaretContext.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\EticaretContext.cs",
+              "RelativeToolTip": "Eticaretproject\\Models\\EticaretContext.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAUwKIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T22:43:41.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Program.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Program.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Program.cs",
+              "RelativeToolTip": "Eticaretproject\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T22:42:10.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\appsettings.json",
+              "RelativeDocumentMoniker": "Eticaretproject\\appsettings.json",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\appsettings.json",
+              "RelativeToolTip": "Eticaretproject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-15T22:34:13.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Views\\Home\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Eticaretproject\\Views\\Home\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Views\\Home\\SignUp.cshtml",
+              "RelativeToolTip": "Eticaretproject\\Views\\Home\\SignUp.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-15T21:54:32.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Kategoriler.cs",
+              "DocumentMoniker": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\Kategoriler.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Models\\Kategoriler.cs",
+              "ToolTip": "C:\\Users\\MONSTER\\Documents\\GitHub\\E-Ticaret-Proje-Odevimiz\\Eticaretproject\\Models\\Kategoriler.cs",
+              "RelativeToolTip": "Eticaretproject\\Models\\Kategoriler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T23:01:28.048Z",
               "EditorCaption": ""
             }
           ]

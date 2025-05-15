@@ -1,0 +1,76 @@
+﻿@model List<Eticaretproject.Models.Urunler>
+
+@{
+    ViewData["Title"] = "Ürünler";
+}
+
+<h2>Ürün Ekle</h2>
+
+<form asp-action="UrunEkle" method="post">
+    <div>
+        <label>Ürün Adı:</label>
+        <input type="text" name="UrunAdi" required />
+    </div>
+    <div>
+        <label>Açıklama:</label>
+        <input type="text" name="Aciklama" />
+    </div>
+    <div>
+        <label>Fiyat:</label>
+        <input type="number" name="Fiyat" step="0.01" required />
+    </div>
+    <div>
+        <label>Stok:</label>
+        <input type="number" name="Stok" required />
+    </div>
+    <div>
+        <label>Kategori:</label>
+        <select name="KategoriId" required>
+            @foreach (var kategori in ViewBag.Kategoriler as List<Eticaretproject.Models.Kategoriler>)
+            {
+                <option value="@kategori.KategoriId">@kategori.KategoriAdi</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label>Resim URL:</label>
+        <input type="text" name="ResimUrl" />
+    </div>
+    <button type="submit">Ürünü Ekle</button>
+</form>
+
+<hr />
+
+<h2>Ürün Listesi</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Ürün Adı</th>
+            <th>Açıklama</th>
+            <th>Fiyat</th>
+            <th>Stok</th>
+            <th>Kategori</th>
+            <th>Resim</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var urun in Model)
+        {
+            <tr>
+                <td>@urun.UrunAdi</td>
+                <td>@urun.Aciklama</td>
+                <td>@urun.Fiyat ₺</td>
+                <td>@urun.Stok</td>
+                <td>@urun.Kategoriler?.KategoriAdi</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(urun.ResimUrl))
+                    {
+                        <img src="@urun.ResimUrl" width="50" />
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

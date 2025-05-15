@@ -1,0 +1,34 @@
+﻿@model Eticaretproject.Models.Urunler
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+<h2>Yeni Ürün Ekle</h2>
+
+<form asp-action="UrunEkle" method="post">
+    <div>
+        <label>Ürün Adı</label>
+        <input asp-for="UrunAdi" />
+    </div>
+    <div>
+        <label>Açıklama</label>
+        <input asp-for="Aciklama" />
+    </div>
+    <div>
+        <label>Fiyat</label>
+        <input asp-for="Fiyat" type="number" step="0.01" />
+    </div>
+    <div>
+        <label>Stok</label>
+        <input asp-for="Stok" type="number" />
+    </div>
+    <div>
+        <label>Kategori</label>
+        <select asp-for="KategoriId" asp-items="ViewBag.Kategoriler">
+            <option value="">-- Seçiniz --</option>
+        </select>
+    </div>
+    <div>
+        <label>Resim URL</label>
+        <input asp-for="ResimUrl" />
+    </div>
+    <button type="submit">Kaydet</button>
+</form>
