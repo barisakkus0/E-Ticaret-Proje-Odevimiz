@@ -89,7 +89,7 @@ using Microsoft.EntityFrameworkCore; // Include için gerekli
             ViewBag.Kategoriler = new SelectList(_context.Kategorilers.ToList(), "KategoriId", "KategoriAdi");
             return View();
         }
-
+        // get ve post metodları ile ürün ekleme işlemi
 
         [HttpPost]
         public IActionResult UrunEkle(Urunler urun)
